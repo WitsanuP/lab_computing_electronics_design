@@ -1,3 +1,5 @@
+# about this project
+using hspice to simulation and practice 
 # how to sim 
 hspice -i [file].sp -o [file].lis
 
