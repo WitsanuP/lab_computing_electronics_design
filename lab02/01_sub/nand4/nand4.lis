@@ -1,0 +1,326 @@
+ ****** PrimeSim HSPICE -- V-2023.12-SP1 linux64 (Feb 29 2024 8764641) ******
+  Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: nand4.sp                                                          
+  Command line options: /cad/synopsys/hspice/2023.12-sp1/hspice/linux64/hspice -i nand4.sp -o nand4.lis
+  Start time: Fri Nov 14 03:30:03 2025
+ lic:  
+ lic: FLEXlm: SDK_12.11.9.5 
+ lic: USER:   de016                HOSTNAME: vlsi_super_server3 
+ lic: HOSTID: 19a35d61             PID:      26196 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lshc 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-jun-2027/2025.06 
+ lic: 411(in_use)/1235(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic:   
+  **warning** (nand4.sp:13) Global net name "vdd" in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** PrimeSim HSPICE -- V-2023.12-SP1 linux64 (Feb 29 2024 8764641) ******
+ ******  
+ nand4
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xa1.                            nand               1.00 
+  **info** (nand4.sp:29) DC voltage reset to initial transient source value in source 0:va. new dc=0.1800D+01
+  **warning** (nand4.sp:10) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=nand4.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    5.000E-14 ***
+
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn1=  65.1622p  targ=  30.2152n   trig=  30.1500n
+ pw=  11.5083u  from=   0.             to=  80.0000n
+ pdp= 749.9071a
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   100.0000f       ***
+  
+ delayn1= 110.6798p  targ=  30.2607n   trig=  30.1500n
+ pw=  19.6996u  from=   0.             to=  80.0000n
+ pdp=   2.1803f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   150.0000f       ***
+  
+ delayn1= 156.9922p  targ=  30.3070n   trig=  30.1500n
+ pw=  27.7137u  from=   0.             to=  80.0000n
+ pdp=   4.3508f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   200.0000f       ***
+  
+ delayn1= 203.5325p  targ=  30.3535n   trig=  30.1500n
+ pw=  35.4411u  from=   0.             to=  80.0000n
+ pdp=   7.2134f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   250.0000f       ***
+  
+ delayn1= 251.1652p  targ=  30.4012n   trig=  30.1500n
+ pw=  44.4633u  from=   0.             to=  80.0000n
+ pdp=  11.1676f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   300.0000f       ***
+  
+ delayn1= 301.1774p  targ=  30.4512n   trig=  30.1500n
+ pw=  53.2417u  from=   0.             to=  80.0000n
+ pdp=  16.0352f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   350.0000f       ***
+  
+ delayn1= 347.4458p  targ=  30.4974n   trig=  30.1500n
+ pw=  60.9390u  from=   0.             to=  80.0000n
+ pdp=  21.1730f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   400.0000f       ***
+  
+ delayn1= 393.8602p  targ=  30.5439n   trig=  30.1500n
+ pw=  68.6678u  from=   0.             to=  80.0000n
+ pdp=  27.0455f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   450.0000f       ***
+  
+ delayn1= 438.6931p  targ=  30.5887n   trig=  30.1500n
+ pw=  76.2771u  from=   0.             to=  80.0000n
+ pdp=  33.4622f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   500.0000f       ***
+  
+ delayn1= 483.0475p  targ=  30.6330n   trig=  30.1500n
+ pw=  84.3313u  from=   0.             to=  80.0000n
+ pdp=  40.7360f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   550.0000f       ***
+  
+ delayn1= 528.1919p  targ=  30.6782n   trig=  30.1500n
+ pw=  92.5717u  from=   0.             to=  80.0000n
+ pdp=  48.8956f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   600.0000f       ***
+  
+ delayn1= 585.3833p  targ=  30.7354n   trig=  30.1500n
+ pw= 101.1638u  from=   0.             to=  80.0000n
+ pdp=  59.2196f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   650.0000f       ***
+  
+ delayn1= 647.0189p  targ=  30.7970n   trig=  30.1500n
+ pw= 111.9899u  from=   0.             to=  80.0000n
+ pdp=  72.4596f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   700.0000f       ***
+  
+ delayn1= 707.9918p  targ=  30.8580n   trig=  30.1500n
+ pw= 124.1822u  from=   0.             to=  80.0000n
+ pdp=  87.9200f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   750.0000f       ***
+  
+ delayn1= 757.6567p  targ=  30.9077n   trig=  30.1500n
+ pw= 131.5622u  from=   0.             to=  80.0000n
+ pdp=  99.6789f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   800.0000f       ***
+  
+ delayn1= 803.7974p  targ=  30.9538n   trig=  30.1500n
+ pw= 138.7645u  from=   0.             to=  80.0000n
+ pdp= 111.5385f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   850.0000f       ***
+  
+ delayn1= 851.7354p  targ=  31.0017n   trig=  30.1500n
+ pw= 146.8102u  from=   0.             to=  80.0000n
+ pdp= 125.0435f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   900.0000f       ***
+  
+ delayn1= 896.4719p  targ=  31.0465n   trig=  30.1500n
+ pw= 155.0632u  from=   0.             to=  80.0000n
+ pdp= 139.0098f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =   950.0000f       ***
+  
+ delayn1= 937.5833p  targ=  31.0876n   trig=  30.1500n
+ pw= 162.5102u  from=   0.             to=  80.0000n
+ pdp= 152.3669f
+
+          ***** job concluded
+ ******
+ nand4
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+  *** parameter k =     1.0000p       ***
+  
+ delayn1= 981.4586p  targ=  31.1315n   trig=  30.1500n
+ pw= 170.4638u  from=   0.             to=  80.0000n
+ pdp= 167.3032f
+
+          ***** job concluded
+ ******  
+ nand4
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) Gold 6326 CPU @ 2.90GHz
+ cpu MHz	: 800.000
+ CPU(s)		: 64
+  
+ OS:
+ Linux version 3.10.0-1160.71.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Jun 28 15:37:28 UTC 2022
+
+ System loadavg : 1.48 1.23 1.60 3/4343 26330
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    64
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      26 # elements   =      14
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       8 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           4
+  transient          0.20       16020        8158        3294 rev=       185
+  readin             0.03
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        528.16 megabytes
+           total cpu time            0.26 seconds
+           total elapsed time        2.69 seconds
+           job started at     03:30:03 11/14/2025
+           job ended   at     03:30:05 11/14/2025
+           job total runtime         2.69 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        2.43(s)

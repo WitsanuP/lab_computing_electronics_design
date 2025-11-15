@@ -1,0 +1,321 @@
+****** PrimeSim HSPICE -- V-2023.12-SP1 linux64 (Feb 29 2024 8764641) ******
+Input File: nand4.sp
+lic:
+lic: FLEXlm: SDK_12.11.9.5
+lic: USER:   de016                HOSTNAME: vlsi_super_server3
+lic: HOSTID: 19a35d61             PID:      26196
+lic: Using FLEXlm license file:
+lic: 26585@lshc
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 14-jun-2027/2025.06
+lic: 411(in_use)/1235(total) FLOATING license(s) on SERVER 26585@lshc
+lic:
+
+ init: begin read circuit files, cpu clock= 2.46E+00
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/ad
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/behave
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/bjt
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/burr_brn
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/comlinear
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/dio
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/fet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/lin_tech
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/pci
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/signet
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/ti
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/tline
+       option search = /usr/cad/synopsys/hspice/cur/hspice/V-2023.12-SP1/hspice/parts/xilinx
+       option post =     2.00
+ init: end read circuit files, cpu clock= 2.47E+00 peak memory=     527 mb
+ init: begin check errors, cpu clock= 2.47E+00
+ init: end check errors, cpu clock= 2.47E+00 peak memory=     528 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 2.47E+00
+       establish matrix -- done, cpu clock= 2.47E+00 peak memory=     528 mb
+       re-order matrix -- done, cpu clock= 2.48E+00 peak memory=     528 mb
+ init: end setup matrix, cpu clock= 2.48E+00 peak memory=     528 mb
+ sweep: parameter       parameter1       begin, #sweeps =  20
+ parameter: k               =    5.00E-14
+ dcop: begin dcop, cpu clock= 2.48E+00
+ dcop: end dcop, cpu clock= 2.48E+00 peak memory=     528 mb tot_iter=       4
+ output: nand4.mt0
+ sweep: tran tran1    begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.48E+00
+ tran: time= 1.0100E-08 tot_iter=      58 conv_iter=      24 cpu clock= 2.48E+00
+ tran: time= 1.6354E-08 tot_iter=     108 conv_iter=      43 cpu clock= 2.49E+00
+ tran: time= 2.7503E-08 tot_iter=     153 conv_iter=      62 cpu clock= 2.49E+00
+ tran: time= 3.3566E-08 tot_iter=     204 conv_iter=      81 cpu clock= 2.49E+00
+ tran: time= 4.0100E-08 tot_iter=     208 conv_iter=      83 cpu clock= 2.49E+00
+ tran: time= 4.9623E-08 tot_iter=     254 conv_iter=     102 cpu clock= 2.49E+00
+ tran: time= 5.6378E-08 tot_iter=     310 conv_iter=     124 cpu clock= 2.49E+00
+ tran: time= 6.7557E-08 tot_iter=     355 conv_iter=     143 cpu clock= 2.50E+00
+ tran: time= 7.3579E-08 tot_iter=     406 conv_iter=     162 cpu clock= 2.50E+00
+ tran: time= 8.0000E-08 tot_iter=     410 conv_iter=     164 cpu clock= 2.50E+00
+ sweep: tran tran1    end, cpu clock= 2.50E+00 peak memory=     528 mb
+ parameter: k               =    1.00E-13
+ output: nand4.tr0
+ sweep: tran tran2    begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.50E+00
+ tran: time= 1.0100E-08 tot_iter=      54 conv_iter=      24 cpu clock= 2.50E+00
+ tran: time= 1.6330E-08 tot_iter=     106 conv_iter=      44 cpu clock= 2.50E+00
+ tran: time= 2.6919E-08 tot_iter=     150 conv_iter=      63 cpu clock= 2.51E+00
+ tran: time= 3.2603E-08 tot_iter=     200 conv_iter=      82 cpu clock= 2.51E+00
+ tran: time= 4.0100E-08 tot_iter=     206 conv_iter=      85 cpu clock= 2.51E+00
+ tran: time= 4.9300E-08 tot_iter=     251 conv_iter=     104 cpu clock= 2.51E+00
+ tran: time= 5.6190E-08 tot_iter=     303 conv_iter=     124 cpu clock= 2.51E+00
+ tran: time= 6.6516E-08 tot_iter=     347 conv_iter=     143 cpu clock= 2.51E+00
+ tran: time= 7.2473E-08 tot_iter=     398 conv_iter=     162 cpu clock= 2.52E+00
+ tran: time= 8.0000E-08 tot_iter=     404 conv_iter=     165 cpu clock= 2.52E+00
+ sweep: tran tran2    end, cpu clock= 2.52E+00 peak memory=     528 mb
+ parameter: k               =    1.50E-13
+ output: nand4.tr0
+ sweep: tran tran3    begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.52E+00
+ tran: time= 1.0100E-08 tot_iter=      55 conv_iter=      24 cpu clock= 2.52E+00
+ tran: time= 1.6385E-08 tot_iter=     107 conv_iter=      44 cpu clock= 2.52E+00
+ tran: time= 2.4670E-08 tot_iter=     151 conv_iter=      63 cpu clock= 2.52E+00
+ tran: time= 3.2630E-08 tot_iter=     204 conv_iter=      83 cpu clock= 2.52E+00
+ tran: time= 4.0100E-08 tot_iter=     212 conv_iter=      87 cpu clock= 2.52E+00
+ tran: time= 4.8344E-08 tot_iter=     254 conv_iter=     105 cpu clock= 2.53E+00
+ tran: time= 5.6125E-08 tot_iter=     308 conv_iter=     126 cpu clock= 2.53E+00
+ tran: time= 6.4379E-08 tot_iter=     352 conv_iter=     145 cpu clock= 2.53E+00
+ tran: time= 7.2608E-08 tot_iter=     404 conv_iter=     165 cpu clock= 2.53E+00
+ tran: time= 8.0000E-08 tot_iter=     412 conv_iter=     169 cpu clock= 2.53E+00
+ sweep: tran tran3    end, cpu clock= 2.53E+00 peak memory=     528 mb
+ parameter: k               =    2.00E-13
+ output: nand4.tr0
+ sweep: tran tran4    begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.53E+00
+ tran: time= 1.0100E-08 tot_iter=      55 conv_iter=      24 cpu clock= 2.53E+00
+ tran: time= 1.8767E-08 tot_iter=     110 conv_iter=      45 cpu clock= 2.54E+00
+ tran: time= 2.4260E-08 tot_iter=     152 conv_iter=      63 cpu clock= 2.54E+00
+ tran: time= 3.2001E-08 tot_iter=     205 conv_iter=      83 cpu clock= 2.54E+00
+ tran: time= 4.0100E-08 tot_iter=     213 conv_iter=      87 cpu clock= 2.54E+00
+ tran: time= 5.0100E-08 tot_iter=     257 conv_iter=     106 cpu clock= 2.54E+00
+ tran: time= 5.8867E-08 tot_iter=     312 conv_iter=     127 cpu clock= 2.54E+00
+ tran: time= 6.4262E-08 tot_iter=     354 conv_iter=     145 cpu clock= 2.54E+00
+ tran: time= 7.2003E-08 tot_iter=     407 conv_iter=     165 cpu clock= 2.54E+00
+ tran: time= 8.0000E-08 tot_iter=     415 conv_iter=     169 cpu clock= 2.54E+00
+ sweep: tran tran4    end, cpu clock= 2.54E+00 peak memory=     528 mb
+ parameter: k               =    2.50E-13
+ output: nand4.tr0
+ sweep: tran tran5    begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.55E+00
+ tran: time= 9.4390E-09 tot_iter=      55 conv_iter=      24 cpu clock= 2.55E+00
+ tran: time= 1.6300E-08 tot_iter=     110 conv_iter=      45 cpu clock= 2.55E+00
+ tran: time= 2.4343E-08 tot_iter=     152 conv_iter=      63 cpu clock= 2.55E+00
+ tran: time= 3.2208E-08 tot_iter=     204 conv_iter=      83 cpu clock= 2.55E+00
+ tran: time= 4.0100E-08 tot_iter=     210 conv_iter=      86 cpu clock= 2.55E+00
+ tran: time= 5.0100E-08 tot_iter=     254 conv_iter=     105 cpu clock= 2.55E+00
+ tran: time= 6.0100E-08 tot_iter=     308 conv_iter=     126 cpu clock= 2.55E+00
+ tran: time= 6.4142E-08 tot_iter=     348 conv_iter=     143 cpu clock= 2.56E+00
+ tran: time= 7.2212E-08 tot_iter=     400 conv_iter=     163 cpu clock= 2.56E+00
+ tran: time= 8.0000E-08 tot_iter=     406 conv_iter=     166 cpu clock= 2.56E+00
+ sweep: tran tran5    end, cpu clock= 2.56E+00 peak memory=     528 mb
+ parameter: k               =    3.00E-13
+ output: nand4.tr0
+ sweep: tran tran6    begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.56E+00
+ tran: time= 1.0100E-08 tot_iter=      54 conv_iter=      24 cpu clock= 2.56E+00
+ tran: time= 1.6474E-08 tot_iter=     107 conv_iter=      44 cpu clock= 2.56E+00
+ tran: time= 2.4686E-08 tot_iter=     149 conv_iter=      62 cpu clock= 2.56E+00
+ tran: time= 3.2442E-08 tot_iter=     201 conv_iter=      82 cpu clock= 2.56E+00
+ tran: time= 4.0100E-08 tot_iter=     209 conv_iter=      86 cpu clock= 2.56E+00
+ tran: time= 5.0100E-08 tot_iter=     252 conv_iter=     105 cpu clock= 2.56E+00
+ tran: time= 5.6568E-08 tot_iter=     305 conv_iter=     125 cpu clock= 2.57E+00
+ tran: time= 6.4708E-08 tot_iter=     347 conv_iter=     143 cpu clock= 2.57E+00
+ tran: time= 7.2443E-08 tot_iter=     399 conv_iter=     163 cpu clock= 2.57E+00
+ tran: time= 8.0000E-08 tot_iter=     407 conv_iter=     167 cpu clock= 2.57E+00
+ sweep: tran tran6    end, cpu clock= 2.57E+00 peak memory=     528 mb
+ parameter: k               =    3.50E-13
+ output: nand4.tr0
+ sweep: tran tran7    begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.57E+00
+ tran: time= 1.0100E-08 tot_iter=      55 conv_iter=      24 cpu clock= 2.57E+00
+ tran: time= 1.6621E-08 tot_iter=     108 conv_iter=      44 cpu clock= 2.57E+00
+ tran: time= 2.4266E-08 tot_iter=     148 conv_iter=      61 cpu clock= 2.57E+00
+ tran: time= 3.2120E-08 tot_iter=     201 conv_iter=      81 cpu clock= 2.58E+00
+ tran: time= 4.0100E-08 tot_iter=     211 conv_iter=      86 cpu clock= 2.58E+00
+ tran: time= 4.8827E-08 tot_iter=     253 conv_iter=     104 cpu clock= 2.58E+00
+ tran: time= 5.7184E-08 tot_iter=     308 conv_iter=     125 cpu clock= 2.58E+00
+ tran: time= 6.4226E-08 tot_iter=     348 conv_iter=     142 cpu clock= 2.58E+00
+ tran: time= 7.2124E-08 tot_iter=     401 conv_iter=     162 cpu clock= 2.58E+00
+ tran: time= 8.0000E-08 tot_iter=     411 conv_iter=     167 cpu clock= 2.58E+00
+ sweep: tran tran7    end, cpu clock= 2.58E+00 peak memory=     528 mb
+ parameter: k               =    4.00E-13
+ output: nand4.tr0
+ sweep: tran tran8    begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.58E+00
+ tran: time= 1.0100E-08 tot_iter=      55 conv_iter=      24 cpu clock= 2.58E+00
+ tran: time= 1.6398E-08 tot_iter=     108 conv_iter=      44 cpu clock= 2.58E+00
+ tran: time= 2.4745E-08 tot_iter=     150 conv_iter=      62 cpu clock= 2.58E+00
+ tran: time= 3.2369E-08 tot_iter=     203 conv_iter=      82 cpu clock= 2.59E+00
+ tran: time= 4.0100E-08 tot_iter=     211 conv_iter=      86 cpu clock= 2.59E+00
+ tran: time= 4.8508E-08 tot_iter=     254 conv_iter=     104 cpu clock= 2.59E+00
+ tran: time= 5.6821E-08 tot_iter=     309 conv_iter=     125 cpu clock= 2.59E+00
+ tran: time= 6.4632E-08 tot_iter=     346 conv_iter=     141 cpu clock= 2.59E+00
+ tran: time= 7.2374E-08 tot_iter=     402 conv_iter=     162 cpu clock= 2.59E+00
+ tran: time= 8.0000E-08 tot_iter=     410 conv_iter=     166 cpu clock= 2.59E+00
+ sweep: tran tran8    end, cpu clock= 2.59E+00 peak memory=     528 mb
+ parameter: k               =    4.50E-13
+ output: nand4.tr0
+ sweep: tran tran9    begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.59E+00
+ tran: time= 8.3370E-09 tot_iter=      53 conv_iter=      23 cpu clock= 2.59E+00
+ tran: time= 1.6878E-08 tot_iter=     108 conv_iter=      44 cpu clock= 2.59E+00
+ tran: time= 2.4700E-08 tot_iter=     145 conv_iter=      60 cpu clock= 2.59E+00
+ tran: time= 3.2123E-08 tot_iter=     199 conv_iter=      80 cpu clock= 2.60E+00
+ tran: time= 4.0100E-08 tot_iter=     209 conv_iter=      85 cpu clock= 2.60E+00
+ tran: time= 4.8040E-08 tot_iter=     251 conv_iter=     103 cpu clock= 2.60E+00
+ tran: time= 5.6817E-08 tot_iter=     306 conv_iter=     124 cpu clock= 2.60E+00
+ tran: time= 6.4640E-08 tot_iter=     343 conv_iter=     140 cpu clock= 2.60E+00
+ tran: time= 7.2122E-08 tot_iter=     397 conv_iter=     160 cpu clock= 2.60E+00
+ tran: time= 8.0000E-08 tot_iter=     407 conv_iter=     165 cpu clock= 2.60E+00
+ sweep: tran tran9    end, cpu clock= 2.60E+00 peak memory=     528 mb
+ parameter: k               =    5.00E-13
+ output: nand4.tr0
+ sweep: tran tran10   begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.60E+00
+ tran: time= 9.2120E-09 tot_iter=      54 conv_iter=      23 cpu clock= 2.60E+00
+ tran: time= 1.7381E-08 tot_iter=     110 conv_iter=      44 cpu clock= 2.60E+00
+ tran: time= 2.4787E-08 tot_iter=     147 conv_iter=      60 cpu clock= 2.60E+00
+ tran: time= 3.2332E-08 tot_iter=     201 conv_iter=      80 cpu clock= 2.61E+00
+ tran: time= 4.0100E-08 tot_iter=     212 conv_iter=      85 cpu clock= 2.61E+00
+ tran: time= 4.8194E-08 tot_iter=     253 conv_iter=     103 cpu clock= 2.61E+00
+ tran: time= 5.7293E-08 tot_iter=     309 conv_iter=     124 cpu clock= 2.61E+00
+ tran: time= 6.4700E-08 tot_iter=     345 conv_iter=     140 cpu clock= 2.61E+00
+ tran: time= 7.2333E-08 tot_iter=     399 conv_iter=     160 cpu clock= 2.61E+00
+ tran: time= 8.0000E-08 tot_iter=     410 conv_iter=     165 cpu clock= 2.61E+00
+ sweep: tran tran10   end, cpu clock= 2.61E+00 peak memory=     528 mb
+ parameter: k               =    5.50E-13
+ output: nand4.tr0
+ sweep: tran tran11   begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.61E+00
+ tran: time= 8.6547E-09 tot_iter=      52 conv_iter=      23 cpu clock= 2.61E+00
+ tran: time= 1.7889E-08 tot_iter=     108 conv_iter=      44 cpu clock= 2.61E+00
+ tran: time= 2.4952E-08 tot_iter=     144 conv_iter=      60 cpu clock= 2.61E+00
+ tran: time= 3.2574E-08 tot_iter=     198 conv_iter=      80 cpu clock= 2.61E+00
+ tran: time= 4.0100E-08 tot_iter=     209 conv_iter=      85 cpu clock= 2.61E+00
+ tran: time= 4.8616E-08 tot_iter=     250 conv_iter=     103 cpu clock= 2.62E+00
+ tran: time= 5.7891E-08 tot_iter=     306 conv_iter=     124 cpu clock= 2.62E+00
+ tran: time= 6.4953E-08 tot_iter=     342 conv_iter=     140 cpu clock= 2.62E+00
+ tran: time= 7.2574E-08 tot_iter=     396 conv_iter=     160 cpu clock= 2.62E+00
+ tran: time= 8.0000E-08 tot_iter=     407 conv_iter=     165 cpu clock= 2.62E+00
+ sweep: tran tran11   end, cpu clock= 2.62E+00 peak memory=     528 mb
+ parameter: k               =    6.00E-13
+ output: nand4.tr0
+ sweep: tran tran12   begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.62E+00
+ tran: time= 8.8641E-09 tot_iter=      52 conv_iter=      23 cpu clock= 2.62E+00
+ tran: time= 1.8507E-08 tot_iter=     109 conv_iter=      44 cpu clock= 2.62E+00
+ tran: time= 2.5184E-08 tot_iter=     145 conv_iter=      60 cpu clock= 2.62E+00
+ tran: time= 3.2157E-08 tot_iter=     197 conv_iter=      79 cpu clock= 2.62E+00
+ tran: time= 4.0100E-08 tot_iter=     211 conv_iter=      85 cpu clock= 2.62E+00
+ tran: time= 4.9012E-08 tot_iter=     252 conv_iter=     103 cpu clock= 2.62E+00
+ tran: time= 5.8498E-08 tot_iter=     309 conv_iter=     124 cpu clock= 2.63E+00
+ tran: time= 6.5182E-08 tot_iter=     345 conv_iter=     140 cpu clock= 2.63E+00
+ tran: time= 7.2157E-08 tot_iter=     397 conv_iter=     159 cpu clock= 2.63E+00
+ tran: time= 8.0000E-08 tot_iter=     411 conv_iter=     165 cpu clock= 2.63E+00
+ sweep: tran tran12   end, cpu clock= 2.63E+00 peak memory=     528 mb
+ parameter: k               =    6.50E-13
+ output: nand4.tr0
+ sweep: tran tran13   begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.63E+00
+ tran: time= 9.1975E-09 tot_iter=      52 conv_iter=      23 cpu clock= 2.63E+00
+ tran: time= 1.6433E-08 tot_iter=     107 conv_iter=      43 cpu clock= 2.63E+00
+ tran: time= 2.5395E-08 tot_iter=     145 conv_iter=      60 cpu clock= 2.63E+00
+ tran: time= 3.2384E-08 tot_iter=     197 conv_iter=      79 cpu clock= 2.63E+00
+ tran: time= 4.0100E-08 tot_iter=     211 conv_iter=      85 cpu clock= 2.63E+00
+ tran: time= 4.9381E-08 tot_iter=     252 conv_iter=     103 cpu clock= 2.63E+00
+ tran: time= 5.6403E-08 tot_iter=     307 conv_iter=     123 cpu clock= 2.63E+00
+ tran: time= 6.5393E-08 tot_iter=     345 conv_iter=     140 cpu clock= 2.63E+00
+ tran: time= 7.2384E-08 tot_iter=     397 conv_iter=     159 cpu clock= 2.64E+00
+ tran: time= 8.0000E-08 tot_iter=     411 conv_iter=     165 cpu clock= 2.64E+00
+ sweep: tran tran13   end, cpu clock= 2.64E+00 peak memory=     528 mb
+ parameter: k               =    7.00E-13
+ output: nand4.tr0
+ sweep: tran tran14   begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.64E+00
+ tran: time= 9.5872E-09 tot_iter=      52 conv_iter=      23 cpu clock= 2.64E+00
+ tran: time= 1.6833E-08 tot_iter=     107 conv_iter=      43 cpu clock= 2.64E+00
+ tran: time= 2.5186E-08 tot_iter=     143 conv_iter=      59 cpu clock= 2.64E+00
+ tran: time= 3.2547E-08 tot_iter=     196 conv_iter=      78 cpu clock= 2.64E+00
+ tran: time= 4.0100E-08 tot_iter=     208 conv_iter=      83 cpu clock= 2.64E+00
+ tran: time= 4.9324E-08 tot_iter=     250 conv_iter=     101 cpu clock= 2.64E+00
+ tran: time= 5.6818E-08 tot_iter=     305 conv_iter=     121 cpu clock= 2.64E+00
+ tran: time= 6.5183E-08 tot_iter=     341 conv_iter=     137 cpu clock= 2.64E+00
+ tran: time= 7.2547E-08 tot_iter=     394 conv_iter=     156 cpu clock= 2.64E+00
+ tran: time= 8.0000E-08 tot_iter=     406 conv_iter=     161 cpu clock= 2.64E+00
+ sweep: tran tran14   end, cpu clock= 2.64E+00 peak memory=     528 mb
+ parameter: k               =    7.50E-13
+ output: nand4.tr0
+ sweep: tran tran15   begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.64E+00
+ tran: time= 8.2436E-09 tot_iter=      51 conv_iter=      22 cpu clock= 2.65E+00
+ tran: time= 1.6164E-08 tot_iter=     113 conv_iter=      46 cpu clock= 2.65E+00
+ tran: time= 2.5753E-08 tot_iter=     151 conv_iter=      63 cpu clock= 2.65E+00
+ tran: time= 3.2577E-08 tot_iter=     201 conv_iter=      81 cpu clock= 2.65E+00
+ tran: time= 4.0100E-08 tot_iter=     213 conv_iter=      86 cpu clock= 2.65E+00
+ tran: time= 4.9625E-08 tot_iter=     255 conv_iter=     104 cpu clock= 2.65E+00
+ tran: time= 5.6841E-08 tot_iter=     310 conv_iter=     124 cpu clock= 2.65E+00
+ tran: time= 6.5211E-08 tot_iter=     346 conv_iter=     140 cpu clock= 2.65E+00
+ tran: time= 7.2042E-08 tot_iter=     395 conv_iter=     158 cpu clock= 2.65E+00
+ tran: time= 8.0000E-08 tot_iter=     411 conv_iter=     164 cpu clock= 2.65E+00
+ sweep: tran tran15   end, cpu clock= 2.65E+00 peak memory=     528 mb
+ parameter: k               =    8.00E-13
+ output: nand4.tr0
+ sweep: tran tran16   begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.65E+00
+ tran: time= 8.4411E-09 tot_iter=      51 conv_iter=      22 cpu clock= 2.65E+00
+ tran: time= 1.6577E-08 tot_iter=     105 conv_iter=      42 cpu clock= 2.65E+00
+ tran: time= 2.5238E-08 tot_iter=     141 conv_iter=      58 cpu clock= 2.66E+00
+ tran: time= 3.2005E-08 tot_iter=     187 conv_iter=      75 cpu clock= 2.66E+00
+ tran: time= 4.0100E-08 tot_iter=     203 conv_iter=      81 cpu clock= 2.66E+00
+ tran: time= 4.8392E-08 tot_iter=     243 conv_iter=      98 cpu clock= 2.66E+00
+ tran: time= 5.6567E-08 tot_iter=     297 conv_iter=     118 cpu clock= 2.66E+00
+ tran: time= 6.5237E-08 tot_iter=     333 conv_iter=     134 cpu clock= 2.66E+00
+ tran: time= 7.2006E-08 tot_iter=     379 conv_iter=     151 cpu clock= 2.66E+00
+ tran: time= 8.0000E-08 tot_iter=     395 conv_iter=     157 cpu clock= 2.66E+00
+ sweep: tran tran16   end, cpu clock= 2.66E+00 peak memory=     528 mb
+ parameter: k               =    8.50E-13
+ output: nand4.tr0
+ sweep: tran tran17   begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.66E+00
+ tran: time= 8.7500E-09 tot_iter=      51 conv_iter=      22 cpu clock= 2.66E+00
+ tran: time= 1.6701E-08 tot_iter=     105 conv_iter=      42 cpu clock= 2.66E+00
+ tran: time= 2.4438E-08 tot_iter=     145 conv_iter=      60 cpu clock= 2.66E+00
+ tran: time= 3.2080E-08 tot_iter=     193 conv_iter=      78 cpu clock= 2.66E+00
+ tran: time= 4.0100E-08 tot_iter=     209 conv_iter=      84 cpu clock= 2.66E+00
+ tran: time= 4.9010E-08 tot_iter=     249 conv_iter=     101 cpu clock= 2.66E+00
+ tran: time= 5.6737E-08 tot_iter=     303 conv_iter=     121 cpu clock= 2.67E+00
+ tran: time= 6.5321E-08 tot_iter=     339 conv_iter=     137 cpu clock= 2.67E+00
+ tran: time= 7.2067E-08 tot_iter=     385 conv_iter=     154 cpu clock= 2.67E+00
+ tran: time= 8.0000E-08 tot_iter=     401 conv_iter=     160 cpu clock= 2.67E+00
+ sweep: tran tran17   end, cpu clock= 2.67E+00 peak memory=     528 mb
+ parameter: k               =    9.00E-13
+ output: nand4.tr0
+ sweep: tran tran18   begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.67E+00
+ tran: time= 9.2231E-09 tot_iter=      51 conv_iter=      22 cpu clock= 2.67E+00
+ tran: time= 1.6883E-08 tot_iter=     105 conv_iter=      42 cpu clock= 2.67E+00
+ tran: time= 2.4609E-08 tot_iter=     145 conv_iter=      60 cpu clock= 2.67E+00
+ tran: time= 3.2112E-08 tot_iter=     194 conv_iter=      78 cpu clock= 2.67E+00
+ tran: time= 4.0100E-08 tot_iter=     210 conv_iter=      84 cpu clock= 2.67E+00
+ tran: time= 4.9431E-08 tot_iter=     247 conv_iter=     100 cpu clock= 2.67E+00
+ tran: time= 5.6921E-08 tot_iter=     302 conv_iter=     120 cpu clock= 2.67E+00
+ tran: time= 6.5432E-08 tot_iter=     338 conv_iter=     136 cpu clock= 2.67E+00
+ tran: time= 7.2100E-08 tot_iter=     382 conv_iter=     152 cpu clock= 2.67E+00
+ tran: time= 8.0000E-08 tot_iter=     398 conv_iter=     158 cpu clock= 2.67E+00
+ sweep: tran tran18   end, cpu clock= 2.67E+00 peak memory=     528 mb
+ parameter: k               =    9.50E-13
+ output: nand4.tr0
+ sweep: tran tran19   begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.67E+00
+ tran: time= 8.9216E-09 tot_iter=      48 conv_iter=      21 cpu clock= 2.68E+00
+ tran: time= 1.6886E-08 tot_iter=     102 conv_iter=      41 cpu clock= 2.68E+00
+ tran: time= 2.4321E-08 tot_iter=     137 conv_iter=      57 cpu clock= 2.68E+00
+ tran: time= 3.2119E-08 tot_iter=     185 conv_iter=      75 cpu clock= 2.68E+00
+ tran: time= 4.0100E-08 tot_iter=     203 conv_iter=      82 cpu clock= 2.68E+00
+ tran: time= 4.8366E-08 tot_iter=     245 conv_iter=     100 cpu clock= 2.68E+00
+ tran: time= 5.6752E-08 tot_iter=     299 conv_iter=     120 cpu clock= 2.68E+00
+ tran: time= 6.4305E-08 tot_iter=     334 conv_iter=     136 cpu clock= 2.68E+00
+ tran: time= 7.2119E-08 tot_iter=     382 conv_iter=     154 cpu clock= 2.68E+00
+ tran: time= 8.0000E-08 tot_iter=     398 conv_iter=     160 cpu clock= 2.68E+00
+ sweep: tran tran19   end, cpu clock= 2.68E+00 peak memory=     528 mb
+ parameter: k               =    1.00E-12
+ output: nand4.tr0
+ sweep: tran tran20   begin, stop_t=  8.00E-08 #sweeps= 801 cpu clock= 2.68E+00
+ tran: time= 1.0100E-08 tot_iter=      48 conv_iter=      21 cpu clock= 2.68E+00
+ tran: time= 1.6571E-08 tot_iter=      99 conv_iter=      40 cpu clock= 2.68E+00
+ tran: time= 2.4340E-08 tot_iter=     134 conv_iter=      56 cpu clock= 2.68E+00
+ tran: time= 3.2124E-08 tot_iter=     180 conv_iter=      73 cpu clock= 2.68E+00
+ tran: time= 4.0100E-08 tot_iter=     198 conv_iter=      80 cpu clock= 2.68E+00
+ tran: time= 4.8914E-08 tot_iter=     235 conv_iter=      96 cpu clock= 2.69E+00
+ tran: time= 5.6883E-08 tot_iter=     289 conv_iter=     116 cpu clock= 2.69E+00
+ tran: time= 6.4383E-08 tot_iter=     324 conv_iter=     132 cpu clock= 2.69E+00
+ tran: time= 7.2103E-08 tot_iter=     370 conv_iter=     149 cpu clock= 2.69E+00
+ tran: time= 8.0000E-08 tot_iter=     388 conv_iter=     156 cpu clock= 2.69E+00
+ sweep: tran tran20   end, cpu clock= 2.69E+00 peak memory=     528 mb
+ sweep: parameter       parameter       1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

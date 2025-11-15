@@ -1,0 +1,6 @@
+nand_cascade
+ delayn1,  73.6347p, targ=  30.2236n   trig=  30.1500n
+ delayn2, 223.4560p, targ=  30.3735n   trig=  30.1500n
+ delayn3, 330.4972p, targ=  30.4805n   trig=  30.1500n
+ delayn4, 469.7475p, targ=  30.6197n   trig=  30.1500n
+ power, 29.1947u  

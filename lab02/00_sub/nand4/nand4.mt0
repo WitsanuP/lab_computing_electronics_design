@@ -1,0 +1,6 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='V-2023.12-SP1 linux64' PARAM_COUNT=0
+.TITLE 'nand4'
+ delayn1          pw               pdp              temper          
+ alter#          
+  1.137e-10        4.763e-06        5.418e-16         25.0000       
+1               

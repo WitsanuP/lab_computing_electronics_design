@@ -1,0 +1,15 @@
+nand2
+ delayn1=  72.1070p  targ=  30.2221n   trig=  30.1500n
+ pw=   4.7166u  from=   0.             to=  80.0000n
+
+nand4  
+ delayn1= 113.7464p  targ=  30.2637n   trig=  30.1500n
+ pw=   4.7629u  from=   0.             to=  80.0000n
+
+nand6
+ delayn1= 155.4838p  targ=  30.3055n   trig=  30.1500n
+ pw=   5.2291u  from=   0.             to=  80.0000n
+ 
+nand8
+ delayn1= 198.1186p  targ=  30.3481n   trig=  30.1500n
+ pw=   5.4756u  from=   0.             to=  80.0000n

@@ -1,0 +1,22 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "V-2023.12-SP1 linux64"
+* "format" "HSP"
+* "rundate" "22:50:42 11/13/2025 "
+* "netlist" "nand4/nand4.sp "
+* "runtitle" "nand4"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ c =   1.8000        
++ d =   1.8000        
++ out =  86.6772n       
++ vdd =   1.8000        
++ xa1.net =  65.0079n       
++ xa1.net2 =  43.3386n       
++ xa1.net3 =  21.6693n       
+***   END: Saved Operating Point ***                     

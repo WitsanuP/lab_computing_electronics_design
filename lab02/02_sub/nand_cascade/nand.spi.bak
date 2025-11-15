@@ -1,0 +1,9 @@
+nand_gate
+
+
+.subckt nand a b out
+mp0 out a vdd vdd pch l=0.1u w=2u
+mp1 out b vdd vdd nch l=0.1u w=2u
+mn0 out a net 0 pch l=0.1u w=2u
+mn1 net b 0 0 nch l=0.1u w=2u
+.ends

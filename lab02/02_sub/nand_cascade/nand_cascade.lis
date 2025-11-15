@@ -1,0 +1,140 @@
+ ****** PrimeSim HSPICE -- V-2023.12-SP1 linux64 (Feb 29 2024 8764641) ******
+  Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: nand_cascade.sp                                                   
+  Command line options: /cad/synopsys/hspice/2023.12-sp1/hspice/linux64/hspice -i nand_cascade.sp -o nand_cascade.lis
+  Start time: Fri Nov 14 03:32:11 2025
+ lic:  
+ lic: FLEXlm: SDK_12.11.9.5 
+ lic: USER:   de016                HOSTNAME: vlsi_super_server3 
+ lic: HOSTID: 19a35d61             PID:      33008 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lshc 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-jun-2027/2025.06 
+ lic: 452(in_use)/1235(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic:   
+  **warning** (nand_cascade.sp:13) Global net name "vdd" in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** PrimeSim HSPICE -- V-2023.12-SP1 linux64 (Feb 29 2024 8764641) ******
+ ******  
+ nand_cascade
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xa1.                            nand               1.00 
+        2 xa2.                            nand               1.00 
+        3 xa3.                            nand               1.00 
+        4 xa4.                            nand               1.00 
+  **info** (nand_cascade.sp:32) DC voltage reset to initial transient source value in source 0:va. new dc=0.1800D+01
+  **warning** (nand_cascade.sp:10) Both nodes of element vgnd are connected together; Line ignored.
+ 
+
+  
+
+  **warning** the following singular supplies were terminated to 1 meg resistor 
+          supply       node1            node2
+(nand_cascade.sp:37)vf                      0:f                defined in subckt 0                     0:0                defined in subckt 0               
+(nand_cascade.sp:38)vg                      0:g                defined in subckt 0                     0:0                defined in subckt 0               
+(nand_cascade.sp:39)vh                      0:h                defined in subckt 0                     0:0                defined in subckt 0               
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=nand_cascade.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ nand_cascade
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   1.8000  0:b       =   1.8000  0:c       =   1.8000 
+ +0:d       =   1.8000  0:e       =   1.8000  0:f       =   1.8000 
+ +0:g       =   1.8000  0:h       =   1.8000  0:out1    =  21.6693n
+ +0:out2    =   1.8000  0:out3    =  21.6693n 0:out4    =   1.8000 
+ +0:vdd     =   1.8000  1:net     =  10.8346n 2:net     =   7.0193n
+ +3:net     =  10.8347n 4:net     =   7.0193n
+
+ ******
+ nand_cascade
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ delayn1=  73.6347p  targ=  30.2236n   trig=  30.1500n
+ delayn2= 223.4560p  targ=  30.3735n   trig=  30.1500n
+ delayn3= 330.4972p  targ=  30.4805n   trig=  30.1500n
+ delayn4= 469.7475p  targ=  30.6197n   trig=  30.1500n
+ pw=  29.1947u  from=   0.             to=  80.0000n
+ pdp=   2.1497f
+
+          ***** job concluded
+ ******  
+ nand_cascade
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) Gold 6326 CPU @ 2.90GHz
+ cpu MHz	: 800.000
+ CPU(s)		: 64
+  
+ OS:
+ Linux version 3.10.0-1160.71.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Jun 28 15:37:28 UTC 2022
+
+ System loadavg : 0.99 1.09 1.50 2/4419 33159
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    64
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      50 # elements   =      32
+  # resistors   =       3 # capacitors =       4 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       9
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      16 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           4
+  transient          0.04         801         612         232 rev=         8
+  readin             0.05
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        528.37 megabytes
+           total cpu time            0.11 seconds
+           total elapsed time        3.72 seconds
+           job started at     03:32:11 11/14/2025
+           job ended   at     03:32:15 11/14/2025
+           job total runtime         3.72 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        3.61(s)
