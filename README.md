@@ -25,9 +25,11 @@ grep -i error [file].lis
 
 
 # file 
-- .sp
+## .sp
+
 - .tr0
 - .mt0
 - .l
+- .lis
 
 
