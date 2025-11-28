@@ -27,11 +27,12 @@ grep -i error [file].lis
 
 
 # file 
-## .sp
+## .sp  : sub circuit
 
-- .tr0
-- .mt0
-- .l
-- .lis
+- .tr0  keep Transients
+- .mt0  keep measurement
+- .l    keep lib
+- .lis  keep log in sim, error some meas
+- .vcd0 : transients digital
 
 
