@@ -1,0 +1,70 @@
+### Custom WaveView session file (version V-2023.12-SP1 build Mar 01, ) ###
+### saved at 04:40:01 on Fri Nov 28 2025 ###
+wdf 0 "/home/de016/lab03_2/02_sub/adder.vcd0" load=used 
+wdf 1 "/home/de016/lab03_2/02_sub/adder.tr0" load=used 
+scalar list
+waveview_begin 1  stack  offset=0 name_b=151 mntr_b=221 name_width=136 mcur=1.59315206445116e-07 xcur=8.0563947633434e-09 vc=cur-pnl "name=waveview 1" 
+  panel_begin digital pidx=0 spath=name+file marker=on xlabel="sec" vecname=input_a radix=dec 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=toplevel/a7" disp=show 
+    line src=wdf lidx=1 fidx=0 "delim=/" sigtype=9 "name=toplevel/a6" disp=show 
+    line src=wdf lidx=2 fidx=0 "delim=/" sigtype=9 "name=toplevel/a5" disp=show 
+    line src=wdf lidx=3 fidx=0 "delim=/" sigtype=9 "name=toplevel/a4" disp=show 
+    line src=wdf lidx=4 fidx=0 "delim=/" sigtype=9 "name=toplevel/a3" disp=show 
+    line src=wdf lidx=5 fidx=0 "delim=/" sigtype=9 "name=toplevel/a2" disp=show 
+    line src=wdf lidx=6 fidx=0 "delim=/" sigtype=9 "name=toplevel/a1" disp=show 
+    line src=wdf lidx=7 fidx=0 "delim=/" sigtype=9 "name=toplevel/a0" disp=show 
+  panel_end
+  panel_begin digital pidx=1 spath=name+file marker=on xlabel="sec" vecname=input_b radix=dec 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=toplevel/b7" disp=show 
+    line src=wdf lidx=1 fidx=0 "delim=/" sigtype=9 "name=toplevel/b6" disp=show 
+    line src=wdf lidx=2 fidx=0 "delim=/" sigtype=9 "name=toplevel/b5" disp=show 
+    line src=wdf lidx=3 fidx=0 "delim=/" sigtype=9 "name=toplevel/b4" disp=show 
+    line src=wdf lidx=4 fidx=0 "delim=/" sigtype=9 "name=toplevel/b3" disp=show 
+    line src=wdf lidx=5 fidx=0 "delim=/" sigtype=9 "name=toplevel/b2" disp=show 
+    line src=wdf lidx=6 fidx=0 "delim=/" sigtype=9 "name=toplevel/b1" disp=show 
+    line src=wdf lidx=7 fidx=0 "delim=/" sigtype=9 "name=toplevel/b0" disp=show 
+  panel_end
+  panel_begin digital pidx=2 spath=name+file marker=on xlabel="sec" vecname=output radix=dec 
+    line src=wdf lidx=0 fidx=0 "delim=/" sigtype=9 "name=toplevel/s8" disp=show 
+    line src=wdf lidx=1 fidx=0 "delim=/" sigtype=9 "name=toplevel/s7" disp=show 
+    line src=wdf lidx=2 fidx=0 "delim=/" sigtype=9 "name=toplevel/s6" disp=show 
+    line src=wdf lidx=3 fidx=0 "delim=/" sigtype=9 "name=toplevel/s5" disp=show 
+    line src=wdf lidx=4 fidx=0 "delim=/" sigtype=9 "name=toplevel/s4" disp=show 
+    line src=wdf lidx=5 fidx=0 "delim=/" sigtype=9 "name=toplevel/s3" disp=show 
+    line src=wdf lidx=6 fidx=0 "delim=/" sigtype=9 "name=toplevel/s2" disp=show 
+    line src=wdf lidx=7 fidx=0 "delim=/" sigtype=9 "name=toplevel/s1" disp=show 
+    line src=wdf lidx=8 fidx=0 "delim=/" sigtype=9 "name=toplevel/s0" disp=show 
+  panel_end
+  panel_begin linear pidx=3 spath=name+file xlabel="sec" ylabel="V" 
+    line src=wdf lidx=1 fidx=1 "delim=." sigtype=1 "name=v(s0)" attr=2:0:1:0 autoset=true disp=show 
+    line src=wdf lidx=2 fidx=1 "delim=." sigtype=1 "name=v(s1)" attr=3:2:1:0 autoset=true disp=show 
+    line src=wdf lidx=3 fidx=1 "delim=." sigtype=1 "name=v(s2)" attr=4:4:1:0 autoset=true disp=show 
+    line src=wdf lidx=4 fidx=1 "delim=." sigtype=1 "name=v(s3)" attr=5:0:1:0 autoset=true disp=show 
+    line src=wdf lidx=5 fidx=1 "delim=." sigtype=1 "name=v(s4)" attr=6:6:1:0 autoset=true disp=show 
+    line src=wdf lidx=6 fidx=1 "delim=." sigtype=1 "name=v(s5)" attr=7:0:1:0 autoset=true disp=show 
+    line src=wdf lidx=7 fidx=1 "delim=." sigtype=1 "name=v(s6)" attr=0:0:1:0 autoset=true disp=show 
+    line src=wdf lidx=8 fidx=1 "delim=." sigtype=1 "name=v(s7)" attr=1:0:1:0 autoset=true disp=show 
+    line src=wdf lidx=0 fidx=1 "delim=." sigtype=1 "name=v(s8)" attr=1:0:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=4 spath=name+file xlabel="sec" ylabel="V" ymin=-9.e-01 ymax=2.7e+00 
+    line src=wdf lidx=0 fidx=1 "delim=." sigtype=1 "name=v(a0)" attr=2:0:1:0 autoset=true disp=show 
+    line src=wdf lidx=1 fidx=1 "delim=." sigtype=1 "name=v(a1)" attr=3:1:1:0 autoset=true disp=show 
+    line src=wdf lidx=2 fidx=1 "delim=." sigtype=1 "name=v(a2)" attr=4:2:1:0 autoset=true disp=show 
+    line src=wdf lidx=3 fidx=1 "delim=." sigtype=1 "name=v(a3)" attr=5:3:1:0 autoset=true disp=show 
+    line src=wdf lidx=4 fidx=1 "delim=." sigtype=1 "name=v(a4)" attr=6:4:1:0 autoset=true disp=show 
+    line src=wdf lidx=5 fidx=1 "delim=." sigtype=1 "name=v(a5)" attr=7:5:1:0 autoset=true disp=show 
+    line src=wdf lidx=6 fidx=1 "delim=." sigtype=1 "name=v(a6)" attr=0:6:1:0 autoset=true disp=show 
+    line src=wdf lidx=7 fidx=1 "delim=." sigtype=1 "name=v(a7)" attr=1:7:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=5 spath=name+file xlabel="sec" ylabel="V" 
+    line src=wdf lidx=0 fidx=1 "delim=." sigtype=1 "name=v(b7)" attr=3:0:1:0 autoset=true disp=show 
+    line src=wdf lidx=1 fidx=1 "delim=." sigtype=1 "name=v(b0)" attr=4:1:1:0 autoset=true disp=show 
+    line src=wdf lidx=2 fidx=1 "delim=." sigtype=1 "name=v(b1)" attr=5:2:1:0 autoset=true disp=show 
+    line src=wdf lidx=3 fidx=1 "delim=." sigtype=1 "name=v(b2)" attr=6:3:1:0 autoset=true disp=show 
+    line src=wdf lidx=4 fidx=1 "delim=." sigtype=1 "name=v(b3)" attr=7:4:1:0 autoset=true disp=show 
+    line src=wdf lidx=5 fidx=1 "delim=." sigtype=1 "name=v(b4)" attr=0:5:1:0 autoset=true disp=show 
+    line src=wdf lidx=6 fidx=1 "delim=." sigtype=1 "name=v(b5)" attr=1:6:1:0 autoset=true disp=show 
+    line src=wdf lidx=7 fidx=1 "delim=." sigtype=1 "name=v(b6)" attr=2:7:1:0 autoset=true disp=show 
+  panel_end
+waveview_end
+browserOpened

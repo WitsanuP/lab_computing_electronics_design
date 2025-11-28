@@ -1,0 +1,42 @@
+adder
+
+.subckt adder a b c co  s vdd gnd 
+*   drain gate source body mos_type L 
+.param wx1=1
+.param wx2=1
+mp0  net01    a  vdd    vdd  p_18  l=0.18u  w=wx1*4u
+mp1  net01    b  vdd    vdd  p_18  l=0.18u  w=wx1*4u
+mp2  net_mid  a  net02  vdd  p_18  l=0.18u  w=wx1*8u
+mp3  net02    b  net01  vdd  p_18  l=0.18u  w=wx1*8u
+mp4  net_mid  c  net01  vdd  p_18  l=0.18u  w=wx1*4u
+
+mn0  net_mid  c  net03  0    n_18  l=0.18u  w=wx1*2u
+mn1  net03    a  gnd    0    n_18  l=0.18u  w=wx1*2u
+mn2  net03    b  gnd    0    n_18  l=0.18u  w=wx1*2u
+mn3  net_mid  a  net04  0    n_18  l=0.18u  w=wx1*2u
+mn4  net04    b  gnd    0    n_18  l=0.18u  w=wx1*2u
+
+
+mp5   co        net_mid  vdd    vdd  p_18  l=0.18u  w=wx1*4u
+mn5   co        net_mid  gnd    gnd  n_18  l=0.18u  w=wx1*2u
+
+
+mp6   net05     a        vdd    vdd  p_18  l=0.18u  w=wx2*4u
+mp7   net05     b        vdd    vdd  p_18  l=0.18u  w=wx2*4u
+mp8   net05     c        vdd    vdd  p_18  l=0.18u  w=wx2*4u
+mp9   net_mid2  net_mid  net05  vdd  p_18  l=0.18u  w=wx2*4u
+mp10  net06     a        net05  vdd  p_18  l=0.18u  w=wx2*12u
+mp11  net07     b        net06  vdd  p_18  l=0.18u  w=wx2*12u
+mp12  net_mid2  c        net07  vdd  p_18  l=0.18u  w=wx2*12u
+
+mn6   net_mid2  net_mid  net08  gnd  n_18  l=0.18u  w=wx2*2u
+mn7   net08     a        gnd    gnd  n_18  l=0.18u  w=wx2*2u
+mn8   net08     b        gnd    gnd  n_18  l=0.18u  w=wx2*2u
+mn9   net08     c        gnd    gnd  n_18  l=0.18u  w=wx2*2u
+mn10  net_mid2  a        net09  gnd  n_18  l=0.18u  w=wx2*3u
+mn11  net09     b        net10  gnd  n_18  l=0.18u  w=wx2*3u
+mn12  net10     c        gnd    gnd  n_18  l=0.18u  w=wx2*3u
+
+mp13  s   net_mid2  vdd    vdd  p_18  l=0.18u  w=wx2*4u
+mn13  s   net_mid2  gnd    gnd  n_18  l=0.18u  w=wx2*2u
+.ends
